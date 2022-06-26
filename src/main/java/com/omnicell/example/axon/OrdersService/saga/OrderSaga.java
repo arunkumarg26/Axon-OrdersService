@@ -17,8 +17,6 @@ import org.axonframework.modelling.saga.StartSaga;
 import org.axonframework.queryhandling.QueryGateway;
 import org.axonframework.queryhandling.QueryUpdateEmitter;
 import org.axonframework.spring.stereotype.Saga;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.omnicell.example.axon.OrdersService.command.commands.ApproveOrderCommand;
@@ -28,14 +26,14 @@ import com.omnicell.example.axon.OrdersService.core.events.OrderCreatedEvent;
 import com.omnicell.example.axon.OrdersService.core.events.OrderRejectedEvent;
 import com.omnicell.example.axon.OrdersService.core.model.OrderSummary;
 import com.omnicell.example.axon.OrdersService.query.FindOrderQuery;
-import com.appsdeveloperblog.estore.core.commands.CancelProductReservationCommand;
-import com.appsdeveloperblog.estore.core.commands.ProcessPaymentCommand;
-import com.appsdeveloperblog.estore.core.commands.ReserveProductCommand;
-import com.appsdeveloperblog.estore.core.events.PaymentProcessedEvent;
-import com.appsdeveloperblog.estore.core.events.ProductReservationCancelledEvent;
-import com.appsdeveloperblog.estore.core.events.ProductReservedEvent;
-import com.appsdeveloperblog.estore.core.model.User;
-import com.appsdeveloperblog.estore.core.query.FetchUserPaymentDetailsQuery;
+import com.omnicell.example.axon.core.commands.CancelProductReservationCommand;
+import com.omnicell.example.axon.core.commands.ProcessPaymentCommand;
+import com.omnicell.example.axon.core.commands.ReserveProductCommand;
+import com.omnicell.example.axon.core.events.PaymentProcessedEvent;
+import com.omnicell.example.axon.core.events.ProductReservationCancelledEvent;
+import com.omnicell.example.axon.core.events.ProductReservedEvent;
+import com.omnicell.example.axon.core.model.User;
+import com.omnicell.example.axon.core.query.FetchUserPaymentDetailsQuery;
 
 import lombok.extern.slf4j.Slf4j;
 
